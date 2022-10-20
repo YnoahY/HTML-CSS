@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        section {
+            /* 글자의 두께 조절 */
+            font-weight: normal;
+            font-weight: bold;
+
+            /* 기본폰트의 3배 */
+            font-size: 3rem;
+            font-size: 140px;
+
+            /* 자간조절 */
+            letter-spacing: -10px;
+
+            color: #787878;
+            font-size: 10rem;
+            /*
+            rgba 함수의 인자
+            인자 1(red) : 0 ~ 255 까지 넣어서 실험
+            인자 2(green) : 0 ~ 255 까지 넣어서 실험
+            인자 3(blue) : 0 ~ 255 까지 넣어서 실험
+            인자 4(alpha, 투명도) : 0 ~ 1 까지 넣어서 실험
+            */
+            color: rgba(255, 0, 0, 0.5);
+        }
+    </style>
+</head>
+
+<body>
+    1. 태그 생성 단축키D
+    - div + tab : <div></div>
+    - div*3 + tab
+    : <duv>
+        </div>
+        <div></div>
+        <div></div>
+        - div + section + tab
+        : <div></div>
+        <section></section>
+        - table>tr*2>td*3 + tab
+            : <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+
+        <br>
+        2. block, inline, inline-block
+        1) block
+        - 너비 : 미지정 시 최대로 늘어남
+        - 높이 : 미지정 최소로 줄어듦
+        - 배열 방향 : 한줄에 1개의 컨텐츠(세로)
+        2) inline-block
+        - 너비 : 미지정시 최소로 줄어듦
+        - 높이 : 미지정시 최소로 줄어듦
+        - 배열 방향 : 한줄에 최대로 배치(가로)
+
+
+        2. 엘리먼트, 부모, 자식, 형제 관계
+           
+            <section></section> : 엘리먼트1
+            <div>:엘리먼트2, 부모
+                <nav></nav> :div의 자식 1번
+                <nav></nav> 
+                <nav></nav>
+            </div>
+            - 엘리면트 : 총 5개(section 1, div 1, nav 3)
+            - section-div : 형제
+            - div-nav : 부모-자식
+            - nav-nav : 형제
+
+           
+            <table>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+            - 엘리먼트 : 5
+            - table 자식: tr 1
+            - table 후손 : tr 1, td*3
+            - table 손자 : td*3
+            - tr 자식 : td*3
+        
+</body>
+
+</html>

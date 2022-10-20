@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>display: block, inline-block</title>
+    <style>
+        div,
+        section,
+        nav {
+            display: inline-block;
+            font-size: 3rem;
+        }
+
+        div {
+            width: 100px;
+            height: auto;
+            background-color: red;
+        }
+
+        section {
+            width: 150px;
+            height: 150px;
+            background-color: blue;
+            display: inline-block;
+        }
+
+        nav {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            display: inline-block;
+        }
+
+
+        /* 막대 한줄로 정렬 */
+        .green {
+            background-color: green;
+            width: 150px;
+            height: 50px;
+        }
+
+        .blue {
+            background-color: blue;
+            width: 150px;
+            height: 50px;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>to day list</h3>
+    <ul>
+        <li>width</li>
+        <li>heith</li>
+        <li>display: block</li>
+        <li>display: inline-block</li>
+    </ul>
+
+    <div>1</div>
+    <section>2</section>
+    <nav>3</nav>
+
+    <br><br><br>
+
+    <h3>section(green 막대)과 article(blue 막대)를 한줄에 보이도록 하기</h3>
+    <section class="green"></section>
+    <article class="blue"></article>
+</body>
+
+</html>
