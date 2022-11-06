@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>CSS Layout</title>
+        <style>
+            h1 {
+                width: 100%;
+                height: 60px;
+                border: 1px solid gray;
+                padding: 25px;
+                margin: 20px;
+                float: left;
+                font-size: 35px bold;
+            }
+            .stitle {
+                font-size: 25px;
+                font-weight: 800px;
+            }
+            .box1 {
+                width: 1000px;
+                height: 300px;
+                padding: 15px;
+                margin: 20px;
+                float: left;
+                border: 1px solid gray;
+            }
+            .box2 {
+                width: auto;
+                height: auto;
+                padding: 15px;
+                margin: 20px;
+                border: 1px solid gray;
+                clear: both;
+            }
+            #sidebar {
+                width: 300px;
+                height: 300px;
+                border: 1px solid black;
+                padding: 15px;
+                margin: 20px 0px 20px;
+                background: gray;
+                float: right;
+            }
+            p {
+                line-height: 1.6em;
+            }
+            ul li {
+                line-height: 1.6em;
+            }
+          
+        </style>
+    </head>
+    <body>
+        <h1>사이트 제목</h1>
+        <div id="sidebar">
+            <h3 class="stitle">사이드바</h3>
+            <ul>
+                <li> 모든 국민은 근로의 의무를 진다. 국가는 근로의 의무의 내용과 조건을 민주주의의 원칙에 따라 법률로 정한다.</li>
+            </ul>
+        </div>
+        <div class="box1">
+            <h3 class="stitle">본문</h3>
+            <p>재산권의 행사는 공공복리에 적합하도록 하여야 한다. 정부는 회계연도마다 예산안을 편성하여 회계연도 개시 90일
+                전까지 국회에 제출하고, 국히는 회계연도 개시 30일 전까지 이를 의결하여야한다.
+            </p>
+            <p>대통령의 임기가 만료되는 때에는 임기만료 70일 내지 40일전에 후임자를 선거한다. 제 2항과 제 3항의 처분에 대하여는 법원에 제소할 수 없다.
+                언론, 출판에 대한 허가나 검열과 지회 , 결사에 대한 허기는 인정되지 아니한다.</p>
+        </div>
+        <div class="box2">
+            <h3 class="stitle">푸터</h3>
+            <p>이 헌법시행 당시의 법령과 조약은 이 헌법에 위배되지 아니하는 한 그 효력을 지속한다.</p>
+        </div>
+
+    </body>
+</html>
