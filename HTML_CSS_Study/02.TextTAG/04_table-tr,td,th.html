@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>표 만들기</title>
+        <style>
+            table, th, td { /*각각 tbale(표전체), th(제목셀), td(셀)에 선 생김*/
+                border: 1px solid #ccc; } /*1px의 solid(선)이 #ccc색으로 생김*/
+            td { padding: 5px; }
+        </style>
+    </head>
+    <body>
+        <table>
+            <tr>
+                <th>제목 셀</th> <!-- th 잘 사용x -->
+                <td>1행 2열</td>
+                <td>1행 3열</td>
+            </tr>
+            <tr>
+                <th>제목 셀</th> <!-- td로 전부 써도 됨 -->
+                <td>2행 2열</td>
+                <td>2행 3열</td>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>스타일상속</title>
+    <!-- 부모요소의 스타일 속성 -> 자식 요소로 전달
+         스타일의 모든 속성이 상속 되진 않음: 스타일 충돌시 중요도에 따라 우선순위 결정 -->
+        <style>
+            body {
+                color: blue; /*글자색*/
+            }
+            h2 {
+                font-size: 20px; /*글자 크기*/
+                color: brown; /*글자색*/
+            }
+        </style>
+    </head>
+    <body>
+        <h1>CSS</h1>
+        <h2>웹 문서의 다지아니과 내용을 분리합니다.</h2>
+        <p>웸 표준에 의한 웹 문서는 디자인과 내용이 분리되어 있습니다.</p>
+        <p>내용은 HTML을 이용해 구성하고, 디자인은 CSS를 이용해 꾸미는 것입니다.</p>
+    </body>
+</html>
