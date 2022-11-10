@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>비디오 재생하기</title>
+        <style>
+            body { 
+                margin-top: 20px;
+                margin-left: 50px; }
+        </style>
+    </head>
+    <!-- 
+        * 2가지 이상 영상 등록시 사용
+         :시험장 등에서 한 가지 확장자로 등록했을 경우에 오류 생기면 큰 지장이 생기므로
+         같은 파일을 2가지 이상의 확장자로 등록하여 불시의 상황 미연에 방지.
+     -->
+    <body >
+        <video controls>
+            <source src="medias/Painting.mp4" type="video/mp4" > <!-- <-미디어 파일 유형 -->
+            <source src="medias/Painting.webm" type="video/webm">
+        </video>
+    </body>
+</html>

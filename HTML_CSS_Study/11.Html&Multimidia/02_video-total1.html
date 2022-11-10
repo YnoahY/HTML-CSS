@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>불꽃 놀이</title>
+        <style>
+           #contents { 
+            width: 100%;
+            position: relative;
+            text-align: center; /*text 정렬: 중앙*/
+            color: white;
+            margin-top: 10%;
+           }
+           h3 {color: rgb(214, 96, 116);}
+           div ul li { 
+            list-style-type: none; 
+            display: inline-block;
+            padding: 30px;
+        }
+            a:link { /*방문 전 상태*/
+                text-decoration: none;
+                color: pink;
+            }
+            a:visited { /*방문 후 상태/ 방문기록 삭제시 a:link 상태로 돌아감*/
+                text-decoration: none;
+                color: rgb(154, 170, 243);
+            }
+            a:hover {
+                cursor: pointer; /*커서 올렸을때*/
+            }
+            #bg {
+                position: fixed; /*스크롤*/
+                left: 0;
+                top: 0;
+                width: auto;
+                height: auto;
+                min-width: 100%;
+                min-height: 100%;
+                z-index: -100; /*맨 뒤에 위치*/
+                background: url(images/fires.jpg) left top no-repeat;
+                background-size: cover;
+            }
+
+        </style>
+    </head>
+    <body>
+        <video src="medias/happy_new_year.mp4" autoplay loop muted poster="images/fires.jpg" id="bg"></video>
+        <div id="contents">
+            <h1>2022 불꽃 놀이 축제</h1>
+            <h3>2022년 불꽃 놀이 축제를 개최 합니다</h3>
+            <ul>
+                <li><a href="https://www.naver.com/">안내 페이지</a></li>
+                <li><a href="http://google.com">주의 사항</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
