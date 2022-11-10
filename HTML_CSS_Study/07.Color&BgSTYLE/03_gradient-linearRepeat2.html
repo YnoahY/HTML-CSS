@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>선형 그라데이션 반복: pattern</title>
+        <style>
+        div {
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+        /*repeating-linear-gradient(컬러, 컬러 시작점px, 컬러 시작점px, 컬러 시작점px) 
+         * 시작점 0일 때, 값 입력x됨*/
+        .grad { 
+            background: red; /*css 미지원 브라우저 or 오류*/
+            background: -webkit-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+            background: -moz-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+            background: -o-repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+            background: repeating-linear-gradient(yellow, yellow 20px, red 20px, red 40px);
+        }
+    </style>
+    </head>
+    <body>
+        <div class="grad"></div>
+    </body>
+</html>
