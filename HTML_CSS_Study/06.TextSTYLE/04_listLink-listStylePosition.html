@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>불릿 들여쓰기, 내어쓰기</title>
+        <style>
+            .inside {
+                list-style-position: inside; /*불릿 들여쓰기, output:내어쓰기*/
+            } 
+            .insides {
+                list-style-position: inside;
+            }
+        </style>
+    </head>
+    <body>
+        <h3>list-style-position을 지정하지 않음</h3>
+        <ul>
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>동영상강의</li>
+            <ul class="insides">
+                <li>회사소개</li>
+                <li>도서</li>
+                <li>자료실</li>
+                <li>동영상강의</li>
+            </ul>
+        </ul>
+        <ul class="insides">
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>동영상강의</li>
+        </ul>
+        <h3>list-style-position : inside</h3>
+        <ul class="inside">
+            <li>회사소개</li>
+            <li>도서</li>
+            <li>자료실</li>
+            <li>동영상강의</li>
+        </ul>
+    </body>
+</html>
+
+<!-- 1. 순서없는 목록의 불릿
+     - disc : 채운 원
+     - circle : 빈 원
+     - square : 채운 사각형
+     - none : 불릿 없음
+
+    2. 순서 목록의 숫자 변경
+     - decimal: 1로 시작하는 10진수 (1, 2, 3.....)
+     - upper-roman : 대문 로마자 -->
