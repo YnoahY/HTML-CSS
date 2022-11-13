@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>[속성=값] 선택자</title>
+         <!-- [속성=값] 선택자
+            : [] 안에 있는 "속성"과 "값"이 둘다 정확히 일치할 때 적용  -->
+        <style>
+            ul { list-style: none; } /*list-sytle: type, position등을 포함*/
+            li { padding: 5px 30px; }
+            li a {
+                font-size: 16px;
+                color: white;
+                text-decoration: none;
+            }
+            a[target="_blank"] {
+                padding-right: 30px;
+                background: url(../11.Html&Multimidia/images/retriever.jpg) no-repeat center right;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>HTML5 표준안 사이트</h1>
+        <ul>
+            <li><a href="http://w2c.org/TR/html" target="_blank">HTML</a></li>
+            <li><a href="http://www.w3.org/TR/selectors" target="_blank">CSS Selector Level 3</a></li>
+            <li><a href="http://www.w3.org/TR/css3-mediaquries" target="_blank">미디어쿼리</a></li>
+        </ul>
+    </body>
+</html>

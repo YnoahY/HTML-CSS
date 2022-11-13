@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>[속성~=값] 선택자</title>
+        <!-- [속성~=값] 선택자
+            : 값이 인식될 수 있는 "온전한 하나의 단어"일때 적용 
+            :  ex) [class ~= "cat"] {}
+
+                    class="cat" → (o)
+                    class="double cat" → (o)
+                    class="cat shy" → (o)
+                    class="catmeal" → (x)  -->
+        <style>
+            ul {
+                list-style: none;
+            }
+            li {
+                display: inline-block;
+                margin: 10px;
+            }
+            li a {
+                padding: 5px 20px;
+                font-size: 14px;
+                color: blue;
+                text-decoration: none;
+            }
+            .flat {
+                background: blue;
+                color: white;
+            }
+            [class ~= "button"] { /*띄어쓰기 등 없이 온전히 한 단어만 포함*/
+                border: 2px solid black;
+                box-shadow: rgba(0, 0, 0, 0.4) 5px 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li><a href="#">메뉴 1</a></li>
+            <li><a href="#">메뉴 2</a></li>
+            <li><a href="#" class="button">메뉴 3</a></li>
+            <li><a href="#" class="flat button">메뉴 4</a></li>
+            <li><a href="#" class="single button">메뉴 4</a></li>
+            <li><a href="#" class="singlebutton">메뉴 5</a></li>
+        </ul>
+    </body>
+</html>

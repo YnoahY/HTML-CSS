@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>[속성^=] 선택자</title>
+          <!-- [속성^=] 선택자
+            : 특정값으로 시작하는 속성 -->
+        <style>
+            ul {
+                list-style: none;
+            }
+            li {
+                padding: 5px 20px;
+                font-size: 14px;
+                color: blue;
+                text-decoration: none;
+                margin: 15px;
+            }
+            a[title ^= "eng"] { /*eng로 시작하는 값*/
+                background: url(../03.Image&Hiperlink/images03/fantasy.PNG) no-repeat left center;
+                padding: 5px 25px;
+            }
+            a[title^="jap"] { /*jap로 시작하는 값*/
+                background: url(../07.Color&BgSTYLE/images/rainbow.jpg) no-repeat left center;
+                padding: 5px 25px;
+            }
+            a[title^="chin"] { /*chin로 시작하는 값*/
+                background: url(../08.CssBoxMODEL/images/bell.jpg) no-repeat left center;
+                padding: 5px 25px;
+            }
+            a[title^="ko"] { /*ko로 시작하는 값*/
+                border: 1px solid salmon;
+                padding: 5px 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>외국어 서비스: </li>
+            <li><a href="#" title="english">영어</a></li>
+            <li><a href="#" title="japanese">일본어</a></li>
+            <li><a href="#" title="chinese">중국어</a></li>
+            <li><a href="#" title="korean">한국어</a></li>
+        </ul>
+    </body>
+</html>

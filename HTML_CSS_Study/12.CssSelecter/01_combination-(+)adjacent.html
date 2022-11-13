@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>인접 형제 선택자</title>
+        <style>
+            h1+ul { /*h1 태그에 가장 인접한 ul태그*/
+                color: blue;
+                font-weight: bold;
+            }
+            /*인접 형제 선택자(adjacent selector)
+              : +로 구분 -> 1요소 + 2요소
+              : 1요소의 같은 항렬의 2요소에 적용 -> 자식(한단계 하위)에만 적용됨
+              */
+        </style>
+    </head>
+    <body>
+        <section id="container">
+            <h1>예약 방법 및 요금</h1> <!-- 1요소 -->
+            <ul> <!-- 2요소 -->
+                <li>직접 통화</li>
+                <li>문자 남기기</li>
+            </ul><!-- 2요소: 여기까지 -->
+
+            <ul>
+                <li>1인: 40,000원</li>
+                <li>2인: 60,000원</li>
+                <li>3인: 80,000원</li>
+                <li>4인: 100,000원</li>
+            </ul>
+        </section>
+    </body>
+</html>

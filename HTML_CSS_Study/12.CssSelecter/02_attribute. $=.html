@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>[속성$=값] 선택자</title>
+        <!-- [속성$=] 선택자
+            : 특정값으로 끝나는 속성 -->
+        <style>
+            ul {
+                list-style: none;
+            }
+            li a {
+                line-height: 30px;
+                font-size: 14px;
+                color: blue;
+                text-decoration: none;
+            }
+            a[href $="hwp"] { /*연결할 파일(href)의 확장자가 hwp인 링크*/
+            background: url(../03.Image&Hiperlink/images03/cat.jpg) no-repeat right center;
+            padding-right: 25px; 
+            }
+            a[href $="xls"] { /*연결할 파일(href)의 확장자가 hwp인 링크*/
+                background: url(../03.Image&Hiperlink/images03/plane.svg);
+                padding-right: 25px; /*오른쪽 여백 25px에 아이콘 표시*/
+            }
+        </style>
+    </head>
+    <body>
+        <h3>회사 소개 파일 다운로드</h3>
+        <ul>
+            <li><a href="intro.hwp">한글 파일</a></li>
+            <li><a href="intro.xls">엑셀 파일</a></li>
+        </ul>
+    </body>
+</html>ㄴ

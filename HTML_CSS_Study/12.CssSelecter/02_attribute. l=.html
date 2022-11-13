@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>[속성|=값] 선택자</title>
+         <!-- [속성|=값] 선택자
+            : 특정 값이 포함된 속성에 적용, 하이픈(-)으로 연결한 단어가 특정값에 포함될 때도 적용.
+            : spacebar는 적용 안됨.
+            :  ex) a[title|="us"]
+
+                    title="us"  → (o)
+                    title="us-english"  → (o)
+                    title="usenglish"  → (x)
+                    title="us english"  → (x)  -->
+        <style>
+            ul { list-style: none; }
+            li {
+                display: inline-block;
+                margin: 10px;
+            }
+            li a {
+                padding: 5px 20px;
+                font-size: 14px;
+                font-weight: bold;
+                color: blue;
+                text-decoration: none;
+            }
+            a[title|="us"] {
+                background: url(../07.Color&BgSTYLE/images/rainbow.jpg) no-repeat left center;
+                padding: 5px 25px;
+            }
+            a[title|="jap"] {
+                background: url(../11.Html&Multimidia/images/retriever.jpg) no-repeat left center;
+                padding:  5px 25px;
+            }
+        </style>
+    </head>
+    <body>
+        <ul>
+            <li>외국어 서비스: </li>
+            <li><a href="#" title="us">영어</a></li>
+            <li><a href="#" title="us-english">영어</a></li>
+            <li><a href="#" title="japanese">일본어</a></li>
+            <li><a href="#" title="jap-anese">일본어</a></li>
+            <li><a href="#" title="jap anese">일본어</a></li>
+        </ul>
+    </body>
+</html>
