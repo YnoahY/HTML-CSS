@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta lang="utf-8">
+        <title>Transform_scale</title>
+        <style>
+            .origin {
+                width: 250px;
+                height: 500px;
+                float: left;
+                margin: 40px;
+                border: 1px solid #000;
+            }
+            img {
+                width: 250px;
+                height: 500px;
+            }
+            .scalex:hover {
+                -webkit-transform: scaleX(1.2);
+                -ms-transform: scaleX(1.2);
+                -moz-transform: scaleX(1.2);
+                -o-transform: scaleX(1.2);
+                transform: scaleX(1.2);
+            }
+            .scaley:hover {
+                -webkit-transform: scaleY(1.5);
+                -ms-transform: scaleY(1.5);
+                -moz-transform: scaleY(1.5);
+                -o-transform: scaleY(1.5);
+            }
+            .scale:hover {
+                -webkit-transform: scale(0.7);
+                -ms-transform: scale(0.7);
+                -moz-transform: scale(0.7);
+                -o-transform: scale(0.7);
+                transform: scale(0.7);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="scalex">
+                <img src="images/cathedral.jpg">
+            </div>    
+        </div>
+        <div clss="origin">
+            <div class="scaley">
+                <img src="images/child.jpg">
+            </div>
+        </div>
+        <div class="origin">
+            <div class="scale">
+                 <img src="images/wine.jpg">
+            </div>
+        </div>
+    </body>
+</html>

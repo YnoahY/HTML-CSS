@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Transform_rotate</title>
+        <style>
+            .origin {
+                width: 200px;
+                height: 200px;
+                border: 1px solid #000;
+                float: left;
+                margin: 40px;
+            }
+            img {
+                width: 200px;
+                height: 200px;
+            }
+            .rotate1:hover {
+                -webkit-transform: rotate(20deg);
+                -ms-transform: rotate(20deg);
+                -moz-transform: rotate(20deg);
+                -o-transform: rotate(20deg);
+                transform: rotate(20deg);
+            }
+            .rotate2:hover {
+                -webkit-transform: rotate(-40deg);
+                -ms-transform: rotate(-40deg);
+                -moz-transform: rotate(-40deg);
+                -o-transform: rotate(-40deg);
+                transform: rotate(-40deg);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="rotate1">
+                <img src="images/cherry.png">
+            </div>
+        </div>
+        <div class="origin">
+            <div class="rotate2">
+                <img src="images/cherry.png">
+            </div>
+        </div>
+    </body>
+</html>

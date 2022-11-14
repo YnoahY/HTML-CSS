@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Transform_Animation_@keyframes</title>
+        <style>
+            div {
+                width: 100px;
+                height: 100px;
+                background-color: pink;
+                -webkit-animation-name: change-bg;
+                -moz-animation-name: change-bg;
+                -o-animation-name: change-bg;
+                animation-name: change-bg;
+
+                -webkit-animation-duration: 3s;
+                -moz-animation-duration: 3s;
+                -o-animation-duration: 3s;
+                animation-duration: 3s;
+            }
+
+            @-webkit-keyframes change-bg {
+                from {
+                    background-color: pink;
+                    border: 1px solid orange;
+                }
+                to {
+                    background-color: olive;
+                    border-radius: 50%;
+                }
+            }
+
+            @-moz-keyframes change-bg {
+                from {
+                    background-color: pink;
+                    border: 1px solid orange;
+                } to {
+                    background-color: olive;
+                    border-radius: 50%;
+                }
+            }
+
+            @-o-keyframes change-bg {
+                form {
+                    background-color: pink;
+                    border: 1px solid orange;
+                } to {
+                    background-color: olive;
+                    border-radius: 50%;
+                }
+            }
+
+            @keyframes change-bg {
+                form {
+                    background-color: pink;
+                    border: 1px solid orange;
+                } to {
+                    background-color: olive;
+                    border: 1px solid rgb(35, 30, 102);
+                    border-radius: 50%;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div></div>
+    </body>
+</html>

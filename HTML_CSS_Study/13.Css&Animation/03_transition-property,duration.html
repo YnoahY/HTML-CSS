@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="utf-8">
+        <title>Transition-property,duration</title>
+        <style>
+            .tr1 {
+                width: 100px;
+                height: 100px;
+                background: blue;
+                border: 1px solid #000;
+                -webkit-transition-property: width, heigh;
+                -moz-transition-property: width, heigh;
+                -o-transition-property: width, heigh;
+                transition-property: width, heigh;
+
+                -webkit-transition-duration: 2s, 1s;
+                -moz-transition-duration: 2s, 1s;
+                transition-duration: 2s, 1s;
+            }
+            .tr1:hover {
+                width: 200px;
+                height: 120px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="tr1"><h1></h1></div>
+    </body>
+</html>

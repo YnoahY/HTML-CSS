@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta lang="utf-8">
+        <title>Transform_translate</title>
+        <style>
+            img {
+                width: auto;
+                height: 100px;
+            }
+            .origin {
+                width: 200px;
+                height: 134px;
+                border: 1px solid black;
+                float: left;
+                margin: 40px;
+            }
+            .movex:hover {
+                -webkit-transform: translateX(50px);
+                -ms-transform: translateX(50px);
+                -moz-transform: translateX(50px);
+                -o-transform: translateX(50px);
+                transform: translateX(50px);
+            }
+            .move:hover {
+                -webkit-transform: translateY(20px);
+                -ms-transform: translateY(20px);
+                -moz-transform: translateY(20px);
+                -o-transform: translateY(20px);
+                transform: translateY(20px);
+            }
+            .movexy:hover {
+                -webkit-transform: translate(10px, 20px);
+                -ms-transform: translate(10px, 20px);
+                -moz-transform: translate(10px, 20px);
+                -o-transform: translate(10px, 20px);
+                transform: translate(10px, 20px);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="origin">
+            <div class="movex">
+                <img src="images/cathedral.jpg">
+            </div>
+            <div class="move">
+                <img src="images/child.jpg">
+            </div>
+            <div class="movexy">
+                <img src="images/wine.jpg">
+            </div>
+        </div>
+    </body>
+</html>
