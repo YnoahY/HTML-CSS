@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>태블릿용</title>
+    <style>
+        div img { 
+            width: 250px;
+            height: 250px;
+        }
+        @media screen and (min-width:220px) and (max-width:600px) {
+            #container {
+                width: 570px;
+                margin: 50px auto;
+                background-color: aqua;
+            }
+        }
+        .card {
+            position: relative;
+            width: 550px;
+            height: 250px;
+            margin: 20px 10px;
+            border: 1px solid #0f0f0f33;
+            background-color: #fff;
+        }
+        .words {
+            position: absolute;
+            width: 200px;
+            left: 310px;
+            top: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div class="card">
+            <img src="imgaes/cat.jpg">
+            <div class="words">
+                <h2>귀여운게<br>최고야!!!</h2>
+                <h3>- 익명1</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgaes/mugcup.jpg">
+            <div class="words">
+                <h2>여유를 즐길때가<br>
+                    제일 행복하지</h2>
+                <h3>- 익명2</h3>
+            </div>
+        </div>
+        <div class="card">
+            <img src="imgaes/jejuisland.jpg">
+            <div class="words">
+                <h2>여행은 최고의
+                    <br>선생님</h2>
+                <h3>- 익명3</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
